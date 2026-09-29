@@ -1,0 +1,302 @@
+{
+  "dataset_source": "Bengaluru House Price Dataset (Kaggle / Public Data)",
+  "raw_dataset_summary": {
+    "shape": [
+      13320,
+      9
+    ],
+    "row_count": 13320,
+    "column_count": 9,
+    "columns": [
+      "area_type",
+      "availability",
+      "location",
+      "size",
+      "society",
+      "total_sqft",
+      "bath",
+      "balcony",
+      "price"
+    ],
+    "dtypes": {
+      "area_type": "object",
+      "availability": "object",
+      "location": "object",
+      "size": "object",
+      "society": "object",
+      "total_sqft": "object",
+      "bath": "float64",
+      "balcony": "float64",
+      "price": "float64"
+    },
+    "missing_counts": {
+      "area_type": 0,
+      "availability": 0,
+      "location": 1,
+      "size": 16,
+      "society": 5502,
+      "total_sqft": 0,
+      "bath": 73,
+      "balcony": 609,
+      "price": 0
+    },
+    "missing_percentages": {
+      "area_type": 0.0,
+      "availability": 0.0,
+      "location": 0.01,
+      "size": 0.12,
+      "society": 41.31,
+      "total_sqft": 0.0,
+      "bath": 0.55,
+      "balcony": 4.57,
+      "price": 0.0
+    },
+    "duplicate_count": 529,
+    "memory_usage_mb": 4.66
+  },
+  "raw_validation_summary": {
+    "is_valid": false,
+    "total_rows": 13320,
+    "total_columns": 9,
+    "schema_validation": {
+      "valid": true,
+      "missing_required_columns": [],
+      "existing_columns": [
+        "area_type",
+        "availability",
+        "location",
+        "size",
+        "society",
+        "total_sqft",
+        "bath",
+        "balcony",
+        "price"
+      ]
+    },
+    "missing_value_analysis": {
+      "total_missing_cells": 6201,
+      "columns_with_missing": {
+        "location": 1,
+        "size": 16,
+        "society": 5502,
+        "bath": 73,
+        "balcony": 609
+      },
+      "missing_percentages": {
+        "location": 0.01,
+        "size": 0.12,
+        "society": 41.31,
+        "bath": 0.55,
+        "balcony": 4.57
+      },
+      "critical_missing": {
+        "location": 1
+      }
+    },
+    "duplicate_analysis": {
+      "duplicate_count": 529,
+      "duplicate_percentage": 3.97
+    },
+    "domain_impossibilities": {
+      "impossible_count": 0,
+      "anomalies_breakdown": {}
+    },
+    "outlier_detection": {
+      "bath": {
+        "q1": 2.0,
+        "q3": 3.0,
+        "iqr": 1.0,
+        "lower_bound": 0.5,
+        "upper_bound": 4.5,
+        "outlier_count": 1039,
+        "outlier_percentage": 7.84
+      },
+      "balcony": {
+        "q1": 1.0,
+        "q3": 2.0,
+        "iqr": 1.0,
+        "lower_bound": -0.5,
+        "upper_bound": 3.5,
+        "outlier_count": 0,
+        "outlier_percentage": 0.0
+      },
+      "price": {
+        "q1": 50.0,
+        "q3": 120.0,
+        "iqr": 70.0,
+        "lower_bound": -55.0,
+        "upper_bound": 225.0,
+        "outlier_count": 1276,
+        "outlier_percentage": 9.58
+      }
+    }
+  },
+  "cleaning_operations": {
+    "initial_rows": 13320,
+    "duplicates_removed": 529,
+    "dropped_null_essentials": 16,
+    "domain_anomalies_filtered": 380,
+    "final_cleaned_rows": 12395,
+    "final_columns": [
+      "location",
+      "total_sqft",
+      "bath",
+      "balcony",
+      "bhk",
+      "area_type",
+      "availability_status",
+      "price"
+    ],
+    "data_retention_rate_pct": 93.06
+  },
+  "cleaned_dataset_summary": {
+    "shape": [
+      12395,
+      8
+    ],
+    "row_count": 12395,
+    "column_count": 8,
+    "columns": [
+      "location",
+      "total_sqft",
+      "bath",
+      "balcony",
+      "bhk",
+      "area_type",
+      "availability_status",
+      "price"
+    ],
+    "dtypes": {
+      "location": "object",
+      "total_sqft": "float64",
+      "bath": "int64",
+      "balcony": "int64",
+      "bhk": "float64",
+      "area_type": "object",
+      "availability_status": "object",
+      "price": "float64"
+    },
+    "missing_counts": {
+      "location": 0,
+      "total_sqft": 0,
+      "bath": 0,
+      "balcony": 0,
+      "bhk": 0,
+      "area_type": 0,
+      "availability_status": 0,
+      "price": 0
+    },
+    "missing_percentages": {
+      "location": 0.0,
+      "total_sqft": 0.0,
+      "bath": 0.0,
+      "balcony": 0.0,
+      "bhk": 0.0,
+      "area_type": 0.0,
+      "availability_status": 0.0,
+      "price": 0.0
+    },
+    "duplicate_count": 192,
+    "memory_usage_mb": 2.71
+  },
+  "cleaned_validation_summary": {
+    "is_valid": true,
+    "total_rows": 12395,
+    "total_columns": 8,
+    "schema_validation": {
+      "valid": true,
+      "missing_required_columns": [],
+      "existing_columns": [
+        "location",
+        "total_sqft",
+        "bath",
+        "balcony",
+        "bhk",
+        "area_type",
+        "availability_status",
+        "price"
+      ]
+    },
+    "missing_value_analysis": {
+      "total_missing_cells": 0,
+      "columns_with_missing": {},
+      "missing_percentages": {},
+      "critical_missing": {}
+    },
+    "duplicate_analysis": {
+      "duplicate_count": 192,
+      "duplicate_percentage": 1.55
+    },
+    "domain_impossibilities": {
+      "impossible_count": 0,
+      "anomalies_breakdown": {}
+    },
+    "outlier_detection": {
+      "total_sqft": {
+        "q1": 1105.5,
+        "q3": 1700.0,
+        "iqr": 594.5,
+        "lower_bound": 213.75,
+        "upper_bound": 2591.75,
+        "outlier_count": 1121,
+        "outlier_percentage": 9.04
+      },
+      "bath": {
+        "q1": 2.0,
+        "q3": 3.0,
+        "iqr": 1.0,
+        "lower_bound": 0.5,
+        "upper_bound": 4.5,
+        "outlier_count": 805,
+        "outlier_percentage": 6.49
+      },
+      "balcony": {
+        "q1": 1.0,
+        "q3": 2.0,
+        "iqr": 1.0,
+        "lower_bound": -0.5,
+        "upper_bound": 3.5,
+        "outlier_count": 0,
+        "outlier_percentage": 0.0
+      },
+      "bhk": {
+        "q1": 2.0,
+        "q3": 3.0,
+        "iqr": 1.0,
+        "lower_bound": 0.5,
+        "upper_bound": 4.5,
+        "outlier_count": 578,
+        "outlier_percentage": 4.66
+      },
+      "price": {
+        "q1": 50.0,
+        "q3": 120.0,
+        "iqr": 70.0,
+        "lower_bound": -55.0,
+        "upper_bound": 225.0,
+        "outlier_count": 1211,
+        "outlier_percentage": 9.77
+      }
+    }
+  },
+  "target_statistics": {
+    "mean_price_lakhs": 112.65,
+    "median_price_lakhs": 71.8,
+    "std_price_lakhs": 145.08,
+    "min_price_lakhs": 8.0,
+    "max_price_lakhs": 2912.0,
+    "skewness": 7.36
+  },
+  "top_locations": {
+    "Other": 2597,
+    "Whitefield": 522,
+    "Sarjapur Road": 376,
+    "Electronic City": 287,
+    "Kanakpura Road": 247,
+    "Thanisandra": 230,
+    "Yelahanka": 207,
+    "Marathahalli": 168,
+    "Hebbal": 160,
+    "Raja Rajeshwari Nagar": 159
+  }
+}

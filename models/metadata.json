@@ -1,0 +1,103 @@
+{
+  "project": "SmartHouse AI",
+  "scope": "Bengaluru residential property valuation",
+  "target": "price",
+  "target_unit": "\u20b9 Lakhs",
+  "target_transform": "log1p",
+  "random_state": 42,
+  "train_rows": 9916,
+  "test_rows": 2479,
+  "best_model": "XGBoost",
+  "best_params": {
+    "n_estimators": 700,
+    "max_depth": 7,
+    "learning_rate": 0.035,
+    "min_child_weight": 5
+  },
+  "test_metrics": {
+    "MAE_lakhs": 34.93655391690038,
+    "RMSE_lakhs": 113.32847040698748,
+    "R2": 0.634391155991075,
+    "MedianAE_lakhs": 11.765308380126953,
+    "MAPE_percent": 23.20489413877216,
+    "Within_10pct_percent": 32.39209358612344,
+    "Within_20pct_percent": 58.128277531262604,
+    "Within_30pct_percent": 75.19160951996773,
+    "Mean_Error_lakhs": -12.657791160515789
+  },
+  "benchmark": [
+    {
+      "model": "XGBoost",
+      "target_transform": "log1p",
+      "fit_seconds": 0.946,
+      "MAE_lakhs": 35.094543994320354,
+      "RMSE_lakhs": 113.9759621802049,
+      "R2": 0.6302014765271338,
+      "MedianAE_lakhs": 12.137306213378906,
+      "MAPE_percent": 23.278500709187504,
+      "Within_10pct_percent": 31.141589350544574,
+      "Within_20pct_percent": 56.958450988301735,
+      "Within_30pct_percent": 74.5865268253328,
+      "Mean_Error_lakhs": -13.41341601896113
+    },
+    {
+      "model": "LightGBM",
+      "target_transform": "log1p",
+      "fit_seconds": 0.701,
+      "MAE_lakhs": 35.82905798599123,
+      "RMSE_lakhs": 114.46051410239643,
+      "R2": 0.6270505054881244,
+      "MedianAE_lakhs": 11.907889910140568,
+      "MAPE_percent": 23.994174900990046,
+      "Within_10pct_percent": 32.029043969342474,
+      "Within_20pct_percent": 58.49132714804357,
+      "Within_30pct_percent": 74.5461879790238,
+      "Mean_Error_lakhs": -11.593272758606723
+    },
+    {
+      "model": "RandomForest",
+      "target_transform": "log1p",
+      "fit_seconds": 12.619,
+      "MAE_lakhs": 37.472168438325625,
+      "RMSE_lakhs": 117.66379990836987,
+      "R2": 0.6058837174402826,
+      "MedianAE_lakhs": 11.905840581408114,
+      "MAPE_percent": 25.028301965900894,
+      "Within_10pct_percent": 32.593787817668414,
+      "Within_20pct_percent": 56.313029447357806,
+      "Within_30pct_percent": 72.81161758773699,
+      "Mean_Error_lakhs": -13.871559776088114
+    },
+    {
+      "model": "GradientBoosting",
+      "target_transform": "log1p",
+      "fit_seconds": 12.116,
+      "MAE_lakhs": 39.604662199491486,
+      "RMSE_lakhs": 139.5379069233105,
+      "R2": 0.44572786357619365,
+      "MedianAE_lakhs": 13.8700825384741,
+      "MAPE_percent": 25.252741398408514,
+      "Within_10pct_percent": 26.502622025010087,
+      "Within_20pct_percent": 50.62525211778943,
+      "Within_30pct_percent": 70.59298104074223,
+      "Mean_Error_lakhs": -19.237311885520988
+    },
+    {
+      "model": "Ridge",
+      "target_transform": "log1p",
+      "fit_seconds": 0.05,
+      "MAE_lakhs": 52.55431382454754,
+      "RMSE_lakhs": 267.0307753527497,
+      "R2": -1.0298375018677834,
+      "MedianAE_lakhs": 14.809591391167984,
+      "MAPE_percent": 31.814111142762187,
+      "Within_10pct_percent": 25.332795482049214,
+      "Within_20pct_percent": 48.85034288019362,
+      "Within_30pct_percent": 66.3170633319887,
+      "Mean_Error_lakhs": -4.705440798564851
+    }
+  ],
+  "oof_absolute_error_q90_lakhs": 64.26380157470703,
+  "feature_count": 224,
+  "localities": 251
+}

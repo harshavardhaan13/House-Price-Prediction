@@ -1,0 +1,21 @@
+feature,mean_abs_shap
+num__total_sqft,0.33220574259757996
+num__total_rooms,0.08271096646785736
+cat__area_type_Plot Area,0.04424579069018364
+num__sqft_per_bhk,0.03105263039469719
+num__bath,0.02982383407652378
+num__sqft_per_room,0.02919873595237732
+num__bhk,0.023412860929965973
+cat__location_Other,0.022747401148080826
+cat__area_type_Super Built-Up Area,0.01580573245882988
+cat__location_Rajaji Nagar,0.012555372901260853
+num__balcony,0.011751600541174412
+cat__availability_status_Ready To Move,0.008452103473246098
+cat__location_Koramangala,0.005259175319224596
+cat__location_Indira Nagar,0.005145291797816753
+cat__location_Chandapura,0.004762016236782074
+cat__location_Malleshwaram,0.004699378274381161
+cat__area_type_Built-Up Area,0.0046062953770160675
+num__bath_per_bhk,0.004581544082611799
+cat__location_Electronic City Phase Ii,0.0044562676921486855
+cat__location_Electronic City,0.004398827441036701

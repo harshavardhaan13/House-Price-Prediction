@@ -1,0 +1,21 @@
+location,total_sqft,bath,balcony,bhk,area_type,availability_status,price
+Electronic City,1200.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,60.0
+Electronic City,1200.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,60.0
+Whitefield,1000.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,45.0
+Whitefield,1000.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,45.0
+Other,800.0,1.0,1.0,1.0,Super built-up Area,Under Construction,30.0
+Other,800.0,1.0,1.0,1.0,Super built-up Area,Under Construction,30.0
+HSR Layout,2000.0,3.0,2.0,3.0,Built-up Area,Ready To Move,160.0
+Whitefield,1000.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,45.0
+Whitefield,1000.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,45.0
+Whitefield,1000.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,45.0
+Electronic City,1200.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,60.0
+Whitefield,1000.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,45.0
+Electronic City,1200.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,60.0
+Electronic City,1200.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,60.0
+Whitefield,1000.0,2.0,1.0,2.0,Super built-up Area,Ready To Move,45.0
+Other,800.0,1.0,1.0,1.0,Super built-up Area,Under Construction,30.0
+Koramangala,1500.0,3.0,2.0,3.0,Plot Area,Under Construction,120.0
+HSR Layout,2000.0,3.0,2.0,3.0,Built-up Area,Ready To Move,160.0
+HSR Layout,2000.0,3.0,2.0,3.0,Built-up Area,Ready To Move,160.0
+Koramangala,1500.0,3.0,2.0,3.0,Plot Area,Under Construction,120.0
